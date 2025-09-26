@@ -25,6 +25,8 @@ import { SessionListPage } from './pages/sessions/SessionListPage';
 import { SessionDetailPage } from './pages/sessions/SessionDetailPage';
 import { GatewayRegistrationDetailPage } from './pages/gateways/GatewayRegistrationDetailPage';
 import { SimulatorPage } from './pages/simulator/SimulatorPage';
+import { PaymentMethodsPage } from './pages/payments/PaymentMethodsPage';
+import { BillingPage } from './pages/payments/BillingPage';
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState<CountryCode>(CountryCode.CM);
@@ -77,6 +79,8 @@ function App() {
                     <Route path="/sessions" element={<SessionListPage selectedCountry={selectedCountry} />} />
                     <Route path="/sessions/:id" element={<SessionDetailPage />} />
                     <Route path="/settings/*" element={<SettingsPage />} />
+                    <Route path="/payment-methods" element={<PaymentMethodsPage />} />
+                    <Route path="/billing" element={<BillingPage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </main>

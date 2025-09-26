@@ -11,7 +11,9 @@ import {
   Package,
   MapPin,
   Activity,
-  Smartphone
+  Smartphone,
+  CreditCard,
+  Receipt
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -42,6 +44,8 @@ const navigationItems = [
   {
     section: 'Configuration',
     items: [
+      { name: 'Payment Methods', path: '/payment-methods', icon: <CreditCard className="w-5 h-5" /> },
+      { name: 'Billing', path: '/billing', icon: <Receipt className="w-5 h-5" /> },
       { name: 'Settings', path: '/settings', icon: <Settings className="w-5 h-5" /> },
     ]
   }
