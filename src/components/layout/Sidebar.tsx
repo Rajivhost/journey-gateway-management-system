@@ -1,22 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { 
-  LayoutDashboard, 
-  Radio, 
-  Globe2, 
-  Tags, 
-  Users, 
-  Settings,
-  Building2,
-  Package,
-  MapPin,
-  Activity,
-  Smartphone,
-  CreditCard,
-  Receipt
-} from 'lucide-react';
-
-interface SidebarProps {
+import { LayoutDashboard, Radio, Globe as Globe2, Tags, Users, Settings, Building2, Package, MapPin, Activity, Smartphone, CreditCard, Receipt } from 'lucide-react' {
   isExpanded: boolean;
 }
 
