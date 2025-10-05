@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { X, Shield, Save, CheckSquare, Square } from 'lucide-react';
+import { X, Shield, Save, CheckSquare, Square, Settings } from 'lucide-react';
 import { CreateRoleInput, createRoleSchema, Permission } from '../../types/roles';
 import { usePermissionGroups } from '../../hooks/useRoles';
 import { Loading } from '../ui/Loading';
