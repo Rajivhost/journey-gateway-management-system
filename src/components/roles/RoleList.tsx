@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Search, Filter, MoreVertical, Edit, Trash2, 
-  Copy, Eye, Plus, Shield, Users, CheckCircle, 
-  XCircle, Crown, Settings
-} from 'lucide-react';
+import { Search, Filter, MoreVertical, CreditCard as Edit, Trash2, Copy, Eye, Plus, Shield, Users, CheckCircle, XCircle, Crown, Settings } from 'lucide-react';
 import { Role, RoleType } from '../../types/roles';
 import { Loading } from '../ui/Loading';
 import { EmptyState } from '../ui/EmptyState';

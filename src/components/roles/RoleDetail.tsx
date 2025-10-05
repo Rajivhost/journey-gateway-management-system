@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  Shield, Users, Calendar, Edit, Trash2, Copy, 
-  Crown, CheckCircle, XCircle, Clock, Settings,
-  LayoutDashboard, Radio, MapPin, Activity, Building2,
-  Package, Globe, Tags, CreditCard, Smartphone
-} from 'lucide-react';
+import { Shield, Users, Calendar, CreditCard as Edit, Trash2, Copy, Crown, CheckCircle, XCircle, Clock, Settings, LayoutDashboard, Radio, MapPin, Activity, Building2, Package, Globe, Tags, CreditCard, Smartphone } from 'lucide-react';
 import { Role, Permission, RoleType } from '../../types/roles';
 import { Loading } from '../ui/Loading';
 

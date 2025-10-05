@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Edit, Copy, Trash2 } from 'lucide-react';
+import { ArrowLeft, CreditCard as Edit, Copy, Trash2 } from 'lucide-react';
 import { PageHeader } from '../../components/layout/PageHeader';
 import { RoleDetail } from '../../components/roles/RoleDetail';
 import { useRole, useRoles } from '../../hooks/useRoles';
