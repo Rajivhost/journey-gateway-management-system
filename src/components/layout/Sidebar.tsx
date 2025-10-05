@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Radio, Globe as Globe2, Tags, Users, Settings, Building2, Package, MapPin, Activity, Smartphone, CreditCard, Receipt, Shield } from 'lucide-react';
+import { LayoutDashboard, Radio, Globe as Globe2, Tags, Users, Settings, Building2, Package, MapPin, Activity, Smartphone, CreditCard, Receipt, Shield, UserCog } from 'lucide-react';
 
 interface SidebarProps {
   isExpanded: boolean;
@@ -19,6 +19,7 @@ const navigationItems = [
       { name: 'Service Providers', path: '/providers', icon: <Building2 className="w-5 h-5" /> },
       { name: 'Provider Requests', path: '/providers/requests', icon: <Users className="w-5 h-5" /> },
       { name: 'Products', path: '/products', icon: <Package className="w-5 h-5" /> },
+      { name: 'Roles', path: '/roles', icon: <UserCog className="w-5 h-5" /> },
     ]
   },
   {
