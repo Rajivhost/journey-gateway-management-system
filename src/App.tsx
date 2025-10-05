@@ -27,6 +27,9 @@ import { GatewayRegistrationDetailPage } from './pages/gateways/GatewayRegistrat
 import { SimulatorPage } from './pages/simulator/SimulatorPage';
 import { PaymentMethodsPage } from './pages/payments/PaymentMethodsPage';
 import { BillingPage } from './pages/payments/BillingPage';
+import { RoleListPage } from './pages/roles/RoleListPage';
+import { RoleDetailPage } from './pages/roles/RoleDetailPage';
+import { EditRolePage } from './pages/roles/EditRolePage';
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState<CountryCode>(CountryCode.CM);
@@ -81,6 +84,9 @@ function App() {
                     <Route path="/settings/*" element={<SettingsPage />} />
                     <Route path="/payment-methods" element={<PaymentMethodsPage />} />
                     <Route path="/billing" element={<BillingPage />} />
+                    <Route path="/settings/roles" element={<RoleListPage />} />
+                    <Route path="/settings/roles/:id" element={<RoleDetailPage />} />
+                    <Route path="/settings/roles/:id/edit" element={<EditRolePage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </main>
