@@ -31,7 +31,7 @@ export const RoleListPage: React.FC = () => {
     try {
       const role = await createRole(data);
       setShowCreateForm(false);
-      navigate(`/settings/roles/${role.roleId}`);
+      navigate(`/roles/${role.roleId}`);
     } catch (error) {
       console.error('Failed to create role:', error);
     } finally {
@@ -40,11 +40,11 @@ export const RoleListPage: React.FC = () => {
   };
 
   const handleEdit = (role: Role) => {
-    navigate(`/settings/roles/${role.roleId}/edit`);
+    navigate(`/roles/${role.roleId}/edit`);
   };
 
   const handleView = (role: Role) => {
-    navigate(`/settings/roles/${role.roleId}`);
+    navigate(`/roles/${role.roleId}`);
   };
 
   const handleDelete = async (roleId: string) => {
@@ -73,7 +73,7 @@ export const RoleListPage: React.FC = () => {
   const handleDuplicate = async (roleId: string) => {
     try {
       const duplicatedRole = await duplicateRole(roleId);
-      navigate(`/settings/roles/${duplicatedRole.roleId}/edit`);
+      navigate(`/roles/${duplicatedRole.roleId}/edit`);
     } catch (error) {
       console.error('Failed to duplicate role:', error);
     }
