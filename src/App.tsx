@@ -84,9 +84,9 @@ function App() {
                     <Route path="/settings/*" element={<SettingsPage />} />
                     <Route path="/payment-methods" element={<PaymentMethodsPage />} />
                     <Route path="/billing" element={<BillingPage />} />
-                    <Route path="/settings/roles" element={<RoleListPage />} />
-                    <Route path="/settings/roles/:id" element={<RoleDetailPage />} />
-                    <Route path="/settings/roles/:id/edit" element={<EditRolePage />} />
+                    <Route path="/roles" element={<RoleListPage />} />
+                    <Route path="/roles/:id" element={<RoleDetailPage />} />
+                    <Route path="/roles/:id/edit" element={<EditRolePage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </main>
