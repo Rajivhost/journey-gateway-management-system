@@ -30,6 +30,9 @@ import { BillingPage } from './pages/payments/BillingPage';
 import { RoleListPage } from './pages/roles/RoleListPage';
 import { RoleDetailPage } from './pages/roles/RoleDetailPage';
 import { EditRolePage } from './pages/roles/EditRolePage';
+import { ScopeListPage } from './pages/scopes/ScopeListPage';
+import { ScopeDetailPage } from './pages/scopes/ScopeDetailPage';
+import { EditScopePage } from './pages/scopes/EditScopePage';
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState<CountryCode>(CountryCode.CM);
@@ -87,6 +90,9 @@ function App() {
                     <Route path="/roles" element={<RoleListPage />} />
                     <Route path="/roles/:id" element={<RoleDetailPage />} />
                     <Route path="/roles/:id/edit" element={<EditRolePage />} />
+                    <Route path="/scopes" element={<ScopeListPage />} />
+                    <Route path="/scopes/:id" element={<ScopeDetailPage />} />
+                    <Route path="/scopes/:id/edit" element={<EditScopePage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </main>
