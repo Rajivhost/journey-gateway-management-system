@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Edit } from 'lucide-react';
+import { ArrowLeft, CreditCard as Edit } from 'lucide-react';
 import { PageHeader } from '../../components/layout/PageHeader';
 import { Loading } from '../../components/ui/Loading';
 import { useScopes } from '../../hooks/useScopes';
